@@ -1,0 +1,52 @@
+---
+title: "Presentation"
+author: "David Corcoran"
+format: 
+    revealjs:
+        slide-number: true
+---
+
+## Citation Example
+
+- Omar Visquel is generally considered to be one of the best fielding shortstops in baseball and Derek Jeter is considered (at least by sabermetricians) to be one of the worst fielding shortstops despite the fact that he won three Gold Glove awards.[@albert2010sabermetrics]
+
+## Washington Monument
+
+- Started to be built in 1848
+- 169 meters tall
+- ![Washington Monument](./images/WashingtonMonument.jpg)
+
+
+## White House
+
+- Located in Washington DC
+- Home to the President of the United States
+- ![White House](./images/WhiteHouse.JPG)
+
+## Python Code
+```{.python code-line-numbers="9-17"}
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+df = sns.load_dataset("penguins")
+
+# Establishing font size as 18
+FS = 18
+
+# Creating the 3 graphs based on penguin islands
+my_plot = sns.jointplot(
+    data = df,
+    x = "flipper_length_mm",
+    y = "bill_length_mm",
+    hue = "species",
+    palette = "Pastel1",
+    s = 200
+)
+
+# Setting x and y labels
+my_plot.set_axis_labels("Penguin flipper length (mm)", "Penguin bill length (mm)", fontsize = FS)
+
+# Increase axis tick size
+plt.tick_params(axis = "both", labelsize = FS)
+```

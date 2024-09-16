@@ -1,0 +1,91 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Presentation\"\n",
+        "author: \"David Corcoran\"\n",
+        "format: \n",
+        "    revealjs:\n",
+        "        slide-number: true\n",
+        "\n",
+        "    html:\n",
+        "        code-fold: true\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "## Slide 1\n",
+        "\n",
+        "- Turn off alarm\n",
+        "- Get out of bed\n",
+        "- Omar Visquel is generally considered to be one of the best fielding shortstops in baseball and Derek Jeter is considered (at least by sabermetricians) to be one of the worst fielding shortstops despite the fact that he won three Gold Glove awards.[@albert2010sabermetrics]\n",
+        "\n",
+        "## Washington Monument\n",
+        "\n",
+        "- Get in bed\n",
+        "- Count sheep\n",
+        "- ![Washington Monument](./images/WashingtonMonument.jpg)\n",
+        "\n",
+        "  \n",
+        "## White House\n",
+        "\n",
+        "- Get in bed\n",
+        "- Count sheep\n",
+        "- ![White House](./images/WhiteHouse.JPG)\n"
+      ],
+      "id": "984f7a9e"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| code-fold: true\n",
+        "#| code-summary: \"Show the code\"\n",
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = sns.load_dataset(\"penguins\")\n",
+        "\n",
+        "# Establishing font size as 18\n",
+        "FS = 18\n",
+        "\n",
+        "# Creating the 3 graphs based on penguin islands\n",
+        "my_plot = sns.jointplot(\n",
+        "    data = df,\n",
+        "    x = \"flipper_length_mm\",\n",
+        "    y = \"bill_length_mm\",\n",
+        "    hue = \"species\",\n",
+        "    palette = \"Pastel1\",\n",
+        "    s = 200\n",
+        ")\n",
+        "\n",
+        "# Setting x and y labels\n",
+        "my_plot.set_axis_labels(\"Penguin flipper length (mm)\", \"Penguin bill length (mm)\", fontsize = FS)\n",
+        "\n",
+        "# Increase axis tick size\n",
+        "plt.tick_params(axis = \"both\", labelsize = FS)\n",
+        "\n",
+        "# Save the graph as pdf\n",
+        "my_plot.savefig(\"plot-2.pdf\", bbox_inches = \"tight\")"
+      ],
+      "id": "0f893e50",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
