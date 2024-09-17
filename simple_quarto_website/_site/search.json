@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "slides/presentation.html#citation-example",
+    "href": "slides/presentation.html#citation-example",
+    "title": "Presentation",
+    "section": "Citation Example",
+    "text": "Citation Example\n\nOmar Visquel is generally considered to be one of the best fielding shortstops in baseball and Derek Jeter is considered (at least by sabermetricians) to be one of the worst fielding shortstops despite the fact that he won three Gold Glove awards.[@albert2010sabermetrics]"
+  },
+  {
+    "objectID": "slides/presentation.html#washington-monument",
+    "href": "slides/presentation.html#washington-monument",
+    "title": "Presentation",
+    "section": "Washington Monument",
+    "text": "Washington Monument\n\nStarted to be built in 1848\n169 meters tall\n\n\n\nWashington Monument"
+  },
+  {
+    "objectID": "slides/presentation.html#white-house",
+    "href": "slides/presentation.html#white-house",
+    "title": "Presentation",
+    "section": "White House",
+    "text": "White House\n\nLocated in Washington DC\nHome to the President of the United States\n\n\n\nWhite House"
+  },
+  {
+    "objectID": "slides/presentation.html#python-code",
+    "href": "slides/presentation.html#python-code",
+    "title": "Presentation",
+    "section": "Python Code",
+    "text": "Python Code\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndf = sns.load_dataset(\"penguins\")\n\n# Establishing font size as 18\nFS = 18\n\n# Creating the 3 graphs based on penguin islands\nmy_plot = sns.jointplot(\n    data = df,\n    x = \"flipper_length_mm\",\n    y = \"bill_length_mm\",\n    hue = \"species\",\n    palette = \"Pastel1\",\n    s = 200\n)\n\n# Setting x and y labels\nmy_plot.set_axis_labels(\"Penguin flipper length (mm)\", \"Penguin bill length (mm)\", fontsize = FS)\n\n# Increase axis tick size\nplt.tick_params(axis = \"both\", labelsize = FS)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "simple_quarto_website",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#section-1.1",
+    "href": "index.html#section-1.1",
+    "title": "simple_quarto_website",
+    "section": "Section 1.1",
+    "text": "Section 1.1\nLorem ipsum odor amet, consectetuer adipiscing elit. Ut lacinia ullamcorper risus aptent leo nostra dictum. Id vivamus quisque tempor libero augue metus pulvinar. Tristique tortor netus mollis ullamcorper ligula fringilla mus elit. Hac pharetra pulvinar, ex ante leo fusce.\nRegistered Classes + Data Science and Analytics + Probabilistic Modeling and Statistical Computing + Database Systems and SQL"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "simple_quarto_website",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nQuarto allows text and code to be combined in one consolidate, and formatted, document.↩︎"
+  }
+]
