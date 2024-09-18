@@ -1,0 +1,105 @@
+COMPONENT 3
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\DCorc> cd "C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website"
+PS C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website> rm styles.css
+PS C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website> mkdir images
+
+
+    Directory: C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and
+    Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/12/2024   5:26 PM                images
+
+
+PS C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website> mkdir slides
+
+
+    Directory: C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and
+    Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/12/2024   5:26 PM                slides
+
+
+PS C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website> quarto convert about.qmd
+Converted to about.ipynb
+PS C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website> ls
+
+
+    Directory: C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and
+    Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da---l         9/12/2024   5:26 PM                images
+da---l         9/12/2024   5:26 PM                slides
+-a---l         9/12/2024   5:24 PM             11 .gitignore
+-a---l         9/12/2024   5:26 PM            388 about.ipynb
+-a---l         9/12/2024   5:24 PM             40 about.qmd
+-a---l         9/12/2024   5:24 PM            145 index.qmd
+-a---l         9/12/2024   5:25 PM            620 reference.bib
+-a---l         9/12/2024   5:24 PM            220 _quarto.yml
+
+
+PS C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website> more reference.bib
+@article{albert2010sabermetrics,
+  title={Sabermetrics: The past, the present, and the future},
+  author={Albert, Jim},
+  journal={Mathematics and sports},
+  volume={43},
+  pages={3--14},
+  year={2010},
+  publisher={Mathematical Association of America}
+}
+
+@misc{waller2013data,
+  title={Data science, predictive analytics, and big data: a revolution that will transform supply chain design and management},
+  author={Waller, Matthew A and Fawcett, Stanley E},
+  journal={Journal of Business logistics},
+  volume={34},
+  number={2},
+  pages={77--84},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+PS C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2\simple_quarto_website>
+
+
+
+COMPONENT 9
+[main 07e6ad2] simple_quarto_website
+ 12 files changed, 392 insertions(+)
+ create mode 100644 simple_quarto_website/.gitignore
+ create mode 100644 simple_quarto_website/_quarto.yml
+ create mode 100644 simple_quarto_website/about.ipynb
+ create mode 100644 simple_quarto_website/about.qmd
+ create mode 100644 simple_quarto_website/images/WashingtonMonument.jpg
+ create mode 100644 simple_quarto_website/images/WhiteHouse.JPG
+ create mode 100644 simple_quarto_website/index.quarto_ipynb
+ create mode 100644 simple_quarto_website/reference.bib
+ create mode 100644 simple_quarto_website/slides/images/WashingtonMonument.jpg
+ create mode 100644 simple_quarto_website/slides/images/WhiteHouse.JPG
+ create mode 100644 simple_quarto_website/slides/presentation.qmd
+ create mode 100644 simple_quarto_website/slides/presentation.quarto_ipynb
+PS C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2> git push "https://github.com/dcorc7/5000-lab-1.2.git"
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (15/15), 715.91 KiB | 9.67 MiB/s, done.
+Total 15 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/dcorc7/5000-lab-1.2.git
+   faf4a95..07e6ad2  main -> main
+PS C:\Users\DCorc\OneDrive\Documents\Georgetown\1 Fall 2024\DSAN 5000 - Data Science and Analytics\Labs\Lab 1.2\lab-1.2-git-quarto-scp\5000-lab-1.2>

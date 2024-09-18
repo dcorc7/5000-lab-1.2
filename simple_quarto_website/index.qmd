@@ -7,10 +7,8 @@ project:
 
 format:
     html:
-        toc: true
         toc-location: left
         code-fold: true
-
 
 bibliography:
     reference.bib
@@ -24,14 +22,27 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Ut lacinia ullamcorper risus aptent leo nostra dictum. Id vivamus quisque tempor libero augue metus pulvinar. Tristique tortor netus mollis ullamcorper ligula fringilla mus elit. Hac pharetra pulvinar, ex ante leo fusce.
 
-## Section 1.1
+## Columns
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Ut lacinia ullamcorper risus aptent leo nostra dictum. Id vivamus quisque tempor libero augue metus pulvinar. Tristique tortor netus mollis ullamcorper ligula fringilla mus elit. Hac pharetra pulvinar, ex ante leo fusce.
+::: {.columns}
 
-Registered Classes
-    + Data Science and Analytics
-    + Probabilistic Modeling and Statistical Computing
-    + Database Systems and SQL
+
+::: {.column width="50%"}
+Column 1
+:::
+
+::: {.column width="50%"}
+Column 2
+:::
+
+:::
+
+
+
+# Bullets
+- Data Science and Analytics
+- Probabilistic Modeling and Statistical Computing
+- Database Systems and SQL
 
 
 # Markdown Table
@@ -41,6 +52,7 @@ Registered Classes
 | 1   | 2   | 3     | 4    |
 | 11  | 22  | 33    | 44   |
 | 111 | 222 | 333   | 444  |
+
 
 # Inline Math Equation
 $F = GMm / r^{2}$
